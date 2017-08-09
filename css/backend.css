@@ -1,0 +1,280 @@
+.flpl-header {
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #43609C;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
+}
+/* On Off Switch */
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    display:inline-block;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #EEEEEE; color: #736868;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #A1A1A1;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    background-color: #43609C; 
+}
+
+/* On of switch ends */
+.flpl-add-wrap {
+    background-color: white;
+    box-shadow: 0 0 2px;
+    padding: 20px;
+    min-height: 450px;
+    width:70%;
+    display:inline-block;
+}
+.flpl-field {
+    display: inline-block;
+    width:70%;
+}
+.flpl-field-wrap > label {
+    vertical-align: top;
+    width: 24%;
+    display: inline-block;
+    font-weight: bold;
+}
+.flpl-field-wrap {
+    margin-bottom: 25px;
+}
+.flpl-field-note {
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 20px 0;
+    font-style: italic;
+    box-shadow: 0 0 2px;
+    width:340px;
+}
+.flpl-field-wrap input[type="text"],.flpl-field-wrap textarea {
+    width: 350px;
+}
+.flpl-field>label {
+    margin-right: 20px;
+}
+span.flpl-field-sidenote {
+    margin-left: 10px;
+    display:inline-block;
+    width:85%;
+}
+.flpl-field>label>input[type="checkbox"] {
+    vertical-align: top;
+    margin-top: 5px;
+}
+.flpl-message{
+    background: #fff;
+    border-left: 4px solid #7ad03a;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 15px 0px 15px 15px;
+    padding: 10px 12px;
+    position: relative;
+}
+.flpl-message .notice-dismiss:active:before, .notice-dismiss:focus:before, .notice-dismiss:hover:before {
+    color: #43609C;
+}
+.flpl-nav-wrapper{
+    margin-bottom:20px !important;
+}
+.flpl-delete-confirmation {
+    background-color: #bbb;
+    padding: 5px;
+
+}
+a.flpl-delete-yes,.flpl-delete-cancel {
+    background-color: #43609C;
+    border:2px solid #43609C;
+    padding: 5px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    color: #FFF;
+    margin-right: 20px;
+}
+a.flpl-delete-yes:hover,.flpl-delete-cancel:hover{background-color: #fff;color:#43609C;border-color: #43609C}
+.flpl-delete-confirmation p {
+    color: white;
+}
+.flpl-status-loader {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url('../images/ajax-loader.gif') fixed no-repeat;
+}
+.flpl-status-loader {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url('../images/ajax-loader.gif') no-repeat center;
+    padding-bottom: 15px;
+    margin-left: 10px !important;
+}
+span.flpl-status-message {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    margin-top: 8px;
+}
+.flpl-field-wrap .flpl-field > label > .flpl-field-sidenote {
+    display: inline-block;
+    vertical-align: middle;
+}
+label.flpl-block {
+    display: block;
+    margin-bottom: 10px;
+}
+span.flpl-checkbox-trigger {
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+.flpl-block{display:block;}
+.flpl-field > .flpl-block{margin-bottom: 20px;}
+.flpl-sub-field {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.flpl-preview {
+    width: 35%;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    float: left;
+    box-shadow: 0 0 4px;
+}
+.flpl-preview-head {
+    background-color: #bbb;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #222;
+}
+.flpl-clear{clear:both;}
+.flpl-like-settings-wrap {
+    width: 60%;
+    float: left;
+    margin-right: 20px;
+    border-right: 1px solid #bbb;
+    min-height: 400px;
+}
+#flpl-tab-locker-settings {
+    width: 75%;
+}
+.flpl-setings-form {
+    width: 90%;
+}
+.flpl-about-wrap h3 {
+    background-color: #aaa;
+    color: white;
+    padding: 5px;
+}
+.flpl-big-font {
+    font-size: 18px;
+}
+.flpl-big-font { quotes: '\201c' '\201d'; }
+.flpl-big-font:before { content: open-quote; }
+.flpl-big-font:after  { content: close-quote; }
+.flpl-preview img {
+    max-width: 100%;
+}
+.flpl-success-message{width:69%;}
+.flpl-nav-wrapper {
+    width: 70%;
+}
+.flpl-tab-content-wrap ul li {
+    list-style: disc;
+    margin-left: 20px;
+}
+.flpll-upgrade-actions a {
+    background: #43609C;
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px;
+    display: inline-block;
+    margin-right: 20px;
+    border:2px solid #fff;
+}
+.flpll-upgrade-actions a:hover {
+    background: #fff;
+    color: #43609C;
+    border: 2px solid #43609C;
+}
+.flpll-upgrade-actions {
+    margin: 20px 0;
+}
+.flpl-tab-content-wrap h3 {
+    background: #43609C;
+    color: #fff;
+    padding: 5px;
+}
+
+
+.flpll-sidebar-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%;
+    margin-left: 20px;
+    
+}
+.flpll-sidebar-box h4 {
+    font-size: 16px;
+}
+.flpll-sidebar-box-inner {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.flpll-sidebar-box-inner ul li {
+    list-style: disc;
+    margin-left: 10px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+}
+p.flpll-price {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #43609C;
+    color: #fff;
+}
